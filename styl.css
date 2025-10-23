@@ -1,0 +1,426 @@
+/* bg-#F7F7F7 */
+/* from bg#FFFFFF */
+/* crerate buttonbg#141313 */
+/* #C13939 close */
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #F7F7F7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card {
+    position: relative;
+    background-color: #FFFFFF; /* card background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 90%;
+    transition: transform 0.3s ease;
+    display:none ;
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+
+/* Form elements */
+form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: #555;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    
+    font-size: 0.95rem;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+#important{
+  
+    background-color: #ab3600;
+}
+#emergency{
+  
+    background-color: rgb(216, 0, 0);
+}
+#urgent{
+    
+    background-color: purple;
+}
+#no-rush{
+
+    background-color: green;
+}
+
+
+form input:focus, form select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+
+/* Button group */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    gap: 5px;
+}
+
+.button {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+     user-select: none; 
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+/* Create Note button */
+button[type="submit"] {
+    background-color: #141313; /* dark button background */
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #2a2828;
+}
+button[type="submit"]:active{
+background-color: #000000;
+}
+
+/* Close button */
+button#closeBtn {
+    background-color: #C13939; /* red close button */
+    color: #fff;
+}
+
+button#closeBtn:hover {
+    background-color: #a02f2f;
+}
+button#closeBtn:active{
+    background-color: rgb(192, 7, 7);
+}
+
+.scard{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 15px;
+    box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+    cursor: pointer;
+     user-select: none; 
+}
+.scard:active{
+   background-color: #F7F7F7;
+}
+
+.material-symbols-outlined{
+    font-size:22px  ;
+    user-select: none;
+}
+.red{
+    width: 20px;
+    height: 20px;
+   background-color: rgb(216, 0, 0);
+   border-radius: 25px;
+    box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+    cursor: pointer;
+     user-select: none; 
+    
+}
+.red:active{
+    background-color: red;
+}
+.orange:active{
+    background-color: rgb(212, 97, 2);
+}
+.purple:active{
+    background-color: rgb(179, 0, 179);
+}
+.green:active{
+    background-color: rgb(0, 160, 0);
+}
+.orange{
+    width: 20px;
+    height: 20px;
+background-color: #ab3600;
+   border-radius: 25px;
+    box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+    cursor: pointer;
+     user-select: none; 
+
+}
+.purple{
+      width: 20px;
+    height: 20px;
+   background-color: purple;
+   border-radius: 25px;
+    box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+    cursor: pointer;
+     user-select: none; 
+}
+.green{
+      width: 20px;
+    height: 20px;
+   background-color: green;
+   border-radius: 25px;
+    box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+    cursor: pointer;
+     user-select: none; 
+}
+
+.categoryColor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10px;
+
+}
+.img{
+    width: 50px;
+    height: 50px;
+
+   border-radius: 50%;
+   
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.h2{
+    font-size: 1.2rem;
+}
+ul{
+    list-style: none;
+}
+.location ul,.booking ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     color: #555;
+}
+.buttonGroup{
+    display:flex ;
+    align-items: center;
+   
+}
+.buttonGroup{
+    
+    
+  
+    display: flex;
+    align-items: center;
+     gap: 10px;
+}
+.call{
+    width:60px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding:15px 0;
+    background-color:black;
+    border-radius: 20px;
+    color: white;
+    border: none;
+       box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 80px;
+    padding:10px 0;
+    border-radius: 20px;
+      border: none;
+   box-shadow:2px 2px 5px 1px rgb(118, 114, 114) ;
+        padding:15px 0;
+}
+.material-symbols-outlined{
+    font-size: 18px;
+}
+.callCard{
+    position: absolute;   /* stack cards on top of each other */
+  top: 0;               /* start at top of container */
+  left: 0;              /* align left */
+  width: 100%;
+  transition: transform 0.3s, z-index 0.3s; /* smooth stacking animation */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: #fff;     /* card background */
+  border-radius: 8px;
+  padding: 10px;
+}
+.callCard:nth-child(1) {
+  transform: translateY(0px);
+  z-index: 3;
+}
+
+.callCard:nth-child(2) {
+  transform: translateY(4px);
+  z-index: 2;
+}
+
+.callCard:nth-child(3) {
+  transform: translateY(8px);
+  z-index: 1;
+}
+.theme{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 25px;
+    background-color: #dadada;
+    width: 90px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding:0 5px ;
+    
+}
+body.dark {
+  background-color: #212121;
+  
+}
+body.dark .theme {
+  background-color: #444;
+}
+body.dark .card{
+    background-color: #444;
+    box-shadow:2px 2px 2px 2px rgb(10, 10, 10) ;
+    
+}
+
+body.dark .card h3{
+ color: white;
+}
+body.dark form label{
+ color:#ccc;
+}
+
+
+
+
+.themButton{
+    height:30px ;
+    width: 30px;
+    background-color: #171717;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+  
+}
+.darkbtn{
+    color: rgb(0, 0, 0);
+    font-weight:600;
+    font-size: 1rem;
+    display: none;
+}
+.lightbtn{
+    color: white;
+    font-weight:600;
+    font-size: 1rem;
+    /* display: none; */
+}
+
+body.dark .themButton {
+  transform: translateX(calc(90px - 30px - 10px)); 
+ 
+  background-color: #fff;
+}
+body.dark .swipe .plus,body.dark .uparrow,body.dark .downarrow{
+    background-color: #333333;
+    color: white;
+    box-shadow: 2px 2px 2px 2px black;
+}
+body.dark .swipe .plus:active, body.dark .uparrow:active,body.dark.downarrow:active{
+    background-color: #272727;
+}
+body.dark .callCard{
+    background-color: #2d2a2a;
+    box-shadow: 2px 2px 2px  black;
+
+}
+body.dark .callCard li{
+    color: #9d9c9c;
+}
+body.dark .callCard h2{
+    color: white;
+}
+body.dark .callCard .call{
+    background-color: #2e2e2e;
+    box-shadow:1px 1px 1px 1px black;
+
+}
+body.dark .callCard .message{
+    background-color: #2e2e2e;
+    box-shadow:1px 1px 1px 1px black;
+    color: white;
+
+}
+body.dark .categoryColor .red,body.dark .orange,body.dark .purple,body.dark .green{
+    box-shadow: 2px 2px 2px 2px black;
+
+}
+button{
+    cursor: pointer;
+}
+
+.error{
+    position: absolute;
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 13px;
+    left: 50px;
+    display: none;
+
+}
+.con{
+    position: relative;
+    width: 250px;
+    height:190px ;
+
+}

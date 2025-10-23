@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call note</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <link rel="stylesheet" href="styl.css" />
+  </head>
+
+  <body  class="">
+   <div class="theme">
+      <div class="themButton">
+         <span class="darkbtn material-symbols-outlined">
+         
+dark_mode
+</span>
+<span class="lightbtn material-symbols-outlined">
+light_mode
+</span>
+</div>
+   </div>
+    <div class="card">
+      <h3>New Call</h3>
+      <form>
+        <label for="imageUrl">Image URL</label>
+        <input
+        
+          id="imageUrl"
+          type="text"
+          placeholder="https://example.com/photo.jpg"
+          required
+        />
+        <label for="name">Full Name</label>
+        <input required id="name" type="text" placeholder="Enter full name" />
+        <label for="purpose">Purpose</label
+        ><input required
+          id="purpose"
+          type="text"
+          placeholder="e.g., Quick appointment note"
+        />
+        <label for="Category">Category</label>
+        <select required id="Category">
+          <option value="" disabled selected>Select Category</option>
+          <option id="emergency" value="Emergency">Emergency</option>
+          <option id="important" value="important">Important</option>
+          <option id="urgent" value="urgent">Urgent</option>
+          <option id="no-rush" value="no-rush">No Rush</option>
+        </select>
+        <button class="button" id="create" type="submit">Create Note</button>
+        <button class="button" id="closeBtn" type="button">Close</button>
+      </form>
+      <div class="error">
+         Please Check again! Something is Wrong.
+      </div>
+   
+    </div>
+    <div class="swipe">
+        <div class="plus scard"><span  class="material-symbols-outlined">
+add
+</span></div>
+        <div class="uparrow scard">
+<span class="material-symbols-outlined">
+arrow_upward
+</span>
+</div>
+        <div class="downarrow scard"><span class="material-symbols-outlined">
+arrow_downward
+</span></div>
+    </div>
+    <div class="con">
+    
+    
+    </div>
+    <div class="categoryColor">
+        <div class="red"></div>
+        <div class="orange"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
